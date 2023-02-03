@@ -8,34 +8,33 @@
 // }
 // getProdLine()
 
-async function getEngage(){
-    const response = await fetch ("http://localhost/dash/DashbordV5/index.php");
-    const data = await response.json()
-    //console.log(data)
-    console.log(data.qengaged)
-    console.log(document.querySelector("#Qte"));
-    
+async function getEngage() {
+  const response = await fetch("http://localhost/dash/DashbordV5/index.php");
+  const data = await response.json();
+  //console.log(data)
+  console.log(data.qengaged);
+  console.log(document.querySelector("#Qte"));
 
-    document.querySelector("#Qte").innerHTML = "<h1>" + data.qengaged + "</h1>"
+  // document.querySelector("#Qte").innerHTML = "<h1>" + data.qengaged + "</h1>";
 }
-getEngage()
+getEngage();
 
- async function getEncours(){
-    const response = await fetch ("http://localhost/dash/DashbordV5/index.php");
-    const data = await response.json()
-    console.log(data)
+// async function getEncours() {
+//   const response = await fetch("http://localhost/dash/DashbordV5/index.php");
+//   const data = await response.json();
+//   console.log(data);
 
-    console.log(data.qencours)
-    console.log(document.querySelector("#Encours"));
- }
-getEncours()
+//   console.log(data.qencours);
+//   console.log(document.querySelector("#Encours"));
+// }
+// getEncours();
 
 // async function getFab(){
 //     const response = await fetch ("http://localhost/digitex_isatest/_API/php/")
 //     const data = await response.json()
 //     console.log(data[0].qfab)
 
-//     document.querySelector("#fab").innerHTML = "<h1>" + data[0].qfab + "</h1>"
+// document.querySelector("#fab").innerHTML = "<h1>" + data[0].qfab + "</h1>"
 // }
 // getFab()
 // async function getControl(){
